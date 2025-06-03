@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 - WickJP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="legal-page">
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="logo.png" alt="Wickbot Logo"> WickJP
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="index.html#features">機能</a></li>
+                    <li><a href="index.html#stats">統計</a></li>
+                    <li><a href="#" class="btn">招待する</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <h1 class="legal-title">よくある質問</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>WickJPとは何ですか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPは、Discordサーバーの管理とモデレーションを支援する日本語対応ボットです。スパム検出、自動モデレーション、レイド防止など、サーバーのセキュリティと管理を向上させる多様な機能を提供しています。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>WickJPをサーバーに招待するにはどうすればよいですか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>トップページの「招待する」ボタンをクリックし、招待したいサーバーを選択してください。必要な権限を付与すると、すぐにWickJPがサーバーで利用可能になります。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>どのような権限が必要ですか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPが正常に動作するために以下の権限が必要です：</p>
+                <ul>
+                    <li>メッセージの読み取り・送信</li>
+                    <li>メッセージの管理・削除</li>
+                    <li>ユーザーのキック・バン</li>
+                    <li>ロールの管理</li>
+                    <li>チャンネルの管理</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>設定はどこで変更できますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPの設定は、ダッシュボードページで管理できます。サーバー管理者権限を持つユーザーがDiscordでログインすることで、詳細な設定をカスタマイズできます。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>日本語以外の言語でも使用できますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPは主に日本語ユーザー向けに最適化されていますが、基本的な機能は英語でも利用可能です。ただし、スパム検出や自動モデレーション機能は日本語コンテンツに特化しています。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>料金はかかりますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPは完全無料でご利用いただけます！以前プレミアム機能だったhCaptcha認証、高性能サーバー、レイド防止機能も、すべて無料で提供しています。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>どのようなスパム検出機能がありますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPは以下のスパム検出機能を提供しています：</p>
+                <ul>
+                    <li>日本語特有の迷惑メッセージ検出</li>
+                    <li>連続投稿・フラッド検出</li>
+                    <li>招待リンクスパムの防止</li>
+                    <li>画像・ファイルスパムの検出</li>
+                    <li>新規アカウントの監視</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>レイド攻撃とは何ですか？どう防げますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>レイド攻撃とは、大量のbotや悪意のあるユーザーが短時間でサーバーに参加し、スパムやディスラプションを行う攻撃です。WickJPのレイド防止機能は、異常な参加パターンを検出し、自動的にサーバーを保護します。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>hCaptcha認証とは何ですか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>hCaptcha認証は、新規参加者がbotではなく人間であることを確認するためのシステムです。サーバー参加時に簡単な認証を行うことで、bot攻撃やスパムアカウントの侵入を防ぎます。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>サーバーが日本にあるのはなぜですか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>日本のサーバーでホスティングすることで、日本のユーザーに最高のパフォーマンスと低レイテンシを提供できます。また、日本のデータ保護法に準拠した安全なデータ管理も実現しています。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>問題が発生した場合のサポートはありますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>はい、日本語での技術サポートを提供しています。公式Discordサーバー、メール、またはサポートチケットシステムを通じて、日本語で専門スタッフがサポートいたします。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>WickJPのアップデートはどのように行われますか？</h3>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                <p>WickJPは定期的にアップデートされ、新機能やセキュリティ改善が自動的に適用されます。重要なアップデートについては、公式Discordサーバーやウェブサイトでお知らせします。</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>その他のご質問</h3>
+            <p>上記で解決しないご質問がございましたら、お気軽にお問い合わせください。</p>
+            <p>メール: support@wickjp.com</p>
+            <p>Discord: 公式サポートサーバー</p>
+            <p>対応時間: 平日 9:00-18:00 (JST)</p>
+        </div>
+
+        <div class="last-updated">
+            最終更新日: 2025年1月15日
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>WickJP</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="index.html#features">機能</a></li>
+                        <li><a href="index.html#stats">統計</a></li>
+                        <li><a href="faq.html">サポート</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>リソース</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">ドキュメント</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="status.html">ステータス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>法的情報</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms.html">利用規約</a></li>
+                        <li><a href="cookies.html">クッキーポリシー</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>コミュニティ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 WickJP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const toggle = element.querySelector('.faq-toggle');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                answer.style.display = 'block';
+                toggle.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.display = 'none';
+                toggle.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Initialize FAQ answers as hidden
+        document.addEventListener('DOMContentLoaded', function() {
+            const answers = document.querySelectorAll('.faq-answer');
+            answers.forEach(answer => {
+                answer.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
